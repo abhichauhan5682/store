@@ -1,0 +1,41 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "food website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abhinav",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "axios": "^0.19.0",
+    "bling.js": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "crypto": "^1.0.1",
+    "ejs": "^2.7.1",
+    "es6-promisify": "^6.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "html-to-text": "^5.1.1",
+    "jimp": "^0.8.5",
+    "juice": "^5.2.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.7.7",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.3.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "uuid": "^3.3.3",
+    "validator": "^12.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

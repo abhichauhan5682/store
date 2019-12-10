@@ -1,0 +1,26 @@
+<% include partials/header %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 p-4 mt-4">
+            <h1 class="text-center">ADD FORM</h1>
+            <form action="/add" method="POST" class="card" enctype="multipart/form-data">
+                <input type="text" class="form-control" placeholder="NAME" name="store[name]"><br>
+                <textarea placeholder="DESCRIPTION" name="store[description]" class="form-control"></textarea><br>
+                
+                <% var choices=["wifi","alcholic","nonalcholic","friendly"];%>
+                <ul class="text-center">
+                   
+                    <% choices.forEach(function(choice){%>
+                        <input type="checkbox" name="store[tags]" value=<%=choice%>>
+                        <label for="choice"><%= choice %></label>
+                    <%});%>
+                </ul>
+                <input type="file" class="form-control" placeholder="UPLOAD IMAGE" name="photo" accept="image/gif,image/jpeg,image/png,image/jpg">
+                
+                <br>
+                <button class="btn btn-primary">SAVE -></button>
+            </form>
+        </div>
+    </div>
+</div>
+<% include partials/fotter %>

@@ -1,0 +1,19 @@
+<% include partials/header %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 p-md-5 m-md-5">
+                
+                <form action="/register" method="POST" class="card">
+                    <div class="card-header text-center"><strong>SIGN UP</strong></div>
+                    <div class="card-body">
+                            <input type="text" placeholder="username" name="username" class="form-control">
+                            <input type="email" placeholder="email" name="email" class="form-control" required >
+                            <input type="password" placeholder="password" name="password" class="form-control">
+                            <button class="btn btn-success btn-lg">LOGIN IN</button>
+                    </div>
+                </form>
+        </div>
+        
+    </div>
+</div>
+<% include partials/fotter %>

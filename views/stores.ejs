@@ -1,0 +1,37 @@
+<% include partials/header %>
+
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>STORES</h1>
+                <p>
+                  <a href="/add" class="btn btn-primary btn-large">ADD NEW STORE</a>
+                </p>
+            </div>
+        </header>
+        <div class="row">
+            <% store.forEach(function(store){%>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong><%=store.name%></strong>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-tittle">description</h5>
+                            <p class="card-text"><%=store.description%></p>
+                        </div>
+                        <div>
+                            <%store.tags.forEach(function(tag){%>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><%=tag%></li>
+                                </ul>
+                            <%});%>
+                        </div>
+                    </div>
+                </div>
+            <%});%>    
+         </div>
+    </div>
+
+
+<% include partials/fotter %>

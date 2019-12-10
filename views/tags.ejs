@@ -1,0 +1,20 @@
+<% include partials/header %>
+<div class="container center">
+    <div class="row">
+        <div class="col-md-4">
+           <div class="card text-center ">
+               <div class="card-header">
+                   <strong>TAGS</strong>
+               </div>
+                <% tags.forEach(function(tag){ %>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item "><a href="/tags/<%=tag._id%>"><%=tag._id.toUpperCase()%></a><span><%=tag.count%></span> </li>
+                    </ul>
+                <%});%>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+<% include partials/fotter %>
